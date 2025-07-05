@@ -47,7 +47,7 @@ type UpdateItemInput struct {
 }
 
 func (i UpdateItemInput) Validate() error {
-	if i.Title == nil && i.Description == nil && i.Done == nil {
+	if i.Title == nil && i.Description == nil {
 		return errors.New("update structure has no values")
 	}
 
